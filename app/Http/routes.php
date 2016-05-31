@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::Resource('/', 'HomeController');
+Route::Resource('/login', 'LoginController');
