@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Auth;
+use Redirect;
 use App\Http\Requests;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\View;
 
 class LoginController extends Controller
@@ -38,10 +40,12 @@ class LoginController extends Controller
      */
     public function store(Request $request)
     {
-        if (Auth::attempt(['username' => $request->username, 'password' => $request->password])) {
+        if (Auth::attempt(['username' => $request['username'], 'password' => $request['password']])) {
 
-            echo "success with username!";
+            return Redirect::to('/home');
         }
+
+        return Redirect::to('/login');
     }
 
     /**
@@ -87,5 +91,16 @@ class LoginController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return Redirect::to('/login');
+    }
+
+    public function recovery_password()
+    {
+        return View::make('login.recovery');
     }
 }

@@ -54,10 +54,10 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', '37.187.193.24'),
-            'database'  => env('DB_DATABASE', 'radiokoa_runners_heartlovers'),
-            'username'  => env('DB_USERNAME', 'radiokoach'),
-            'password'  => env('DB_PASSWORD', 'I^uZP]2m6Qk]'),
+            'host'      => env('DB_HOST', 'localhost'),
+            'database'  => env('DB_DATABASE', 'blue'),
+            'username'  => env('DB_USERNAME', 'root'),
+            'password'  => env('DB_PASSWORD', 'root'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',

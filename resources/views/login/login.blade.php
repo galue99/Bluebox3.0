@@ -13,6 +13,6 @@
             <label for="showpass">Mostrar Contrase&ntilde;a</label>
             <input type="submit" value="Conectar">
         </div>
-        <a href="recuperar-pass.php">&iquest;Olvid&oacute; contrase&ntilde;a?</a>
+        <a href="{{ URL::to('/recovery_password') }}">&iquest;Olvid&oacute; contrase&ntilde;a?</a>
     </form>
 @endsection

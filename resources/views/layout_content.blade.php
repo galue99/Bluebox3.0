@@ -56,7 +56,7 @@
             <ul>
                 <li><a href="index.php"><i class="fa fa-user"></i>Perfil</a></li>
                 <li><a href="index.php"><i class="fa fa-question-circle"></i>Ayuda</a></li>
-                <li><a href="index.php"><i class="fa fa-sign-out"></i>Salir</a></li>
+                <li><a href="{{ URL::to('/logout') }}"><i class="fa fa-sign-out"></i>Salir</a></li>
             </ul>
         </li>
     </ul>

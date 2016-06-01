@@ -11,6 +11,13 @@
 |
 */
 
+Route::group(['middleware' => ['auth']], function () {
 
-Route::Resource('/', 'HomeController');
+    Route::get('/logout', 'LoginController@logout');
+    Route::Resource('/home', 'HomeController');
+
+});
+
+Route::get('/recovery_password', 'LoginController@recovery_password');
 Route::Resource('/login', 'LoginController');
+
