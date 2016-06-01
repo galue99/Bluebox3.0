@@ -23,28 +23,28 @@
 <body>
 <ul id="menu">
     <li class="logo"><img src="images/bluebox-logo.svg" height="30" /></li>
-    <li><a href="index.php"><i class="fa fa-tachometer fa-2x"></i><span>Tablero</span></a></li>
+    <li><a href="{{ URL::to('/home') }}"><i class="fa fa-tachometer fa-2x"></i><span>Tablero</span></a></li>
     <li><a href="#"><i class="fa fa-th-large fa-2x"></i><span>Contenido</span></a>
         <ul>
-            <li><a href="pp.php">P&aacute;gina principal</a></li>
-            <li><a href="p.php">Perfil</a></li>
-            <li><a href="team.php">Grupo de trabajo</a></li>
-            <li><a href="con.php">Contacto</a></li>
+            <li><a href="{{ URL::to('/home') }}">P&aacute;gina principal</a></li>
+            <li><a href="{{ URL::to('/home') }}">Perfil</a></li>
+            <li><a href="{{ URL::to('/home') }}">Grupo de trabajo</a></li>
+            <li><a href="{{ URL::to('/home') }}">Contacto</a></li>
         </ul>
     </li>
     <li><a href="#"><i class="fa fa-th-list fa-2x"></i><span>Secciones</span></a>
         <ul>
-            <li><a href="t.php">Tipos</a></li>
-            <li><a href="cat.php">Categor&iacute;as</a></li>
-            <li><a href="sub.php">Sub Categor&iacute;as</a></li>
-            <li><a href="c.php">Secci&oacute;n</a></li>
+            <li><a href="{{ URL::to('/home') }}">Tipos</a></li>
+            <li><a href="{{ URL::to('/home') }}">Categor&iacute;as</a></li>
+            <li><a href="{{ URL::to('/home') }}">Sub Categor&iacute;as</a></li>
+            <li><a href="{{ URL::to('/home') }}">Secci&oacute;n</a></li>
         </ul>
     </li><h1></h1>
-    <li><a href="slider.php"><i class="fa fa-toggle-right fa-2x"></i><span>Slider</span></a></li>
-    <li><a href="banners.php"><i class="fa fa-bullhorn fa-2x"></i><span>Anuncios</span></a></li>
-    <li><a href="/foonel"><i class="fa fa-filter fa-2x"></i><span>Foonel</span></a></li>
-    <li><a href="facturacion.php"><i class="fa fa-calculator fa-2x"></i><span>Facturaci&oacute;n</span></a></li>
-    <li><a href="config.php"><i class="fa fa-gears fa-2x"></i><span>Configuraci&oacute;n</span></a></li>
+    <li><a href="{{ URL::to('/home') }}"><i class="fa fa-toggle-right fa-2x"></i><span>Slider</span></a></li>
+    <li><a href="{{ URL::to('/home') }}"><i class="fa fa-bullhorn fa-2x"></i><span>Anuncios</span></a></li>
+    <li><a href="{{ URL::to('/home') }}"><i class="fa fa-filter fa-2x"></i><span>Foonel</span></a></li>
+    <li><a href="{{ URL::to('/home') }}"><i class="fa fa-calculator fa-2x"></i><span>Facturaci&oacute;n</span></a></li>
+    <li><a href="{{ URL::to('/home') }}"><i class="fa fa-gears fa-2x"></i><span>Configuraci&oacute;n</span></a></li>
 </ul>
 
 
@@ -54,8 +54,8 @@
         <li class="notificaciones"><a href="index.php"><i class="fa fa-bell fa-2x"></i><div>3</div></li>
         <li class="perfil"><span>Jose Valderrama</span><a href="#"><img src="images/users/user-sample.jpg" /><i class="fa fa-chevron-down"></i></a>
             <ul>
-                <li><a href="index.php"><i class="fa fa-user"></i>Perfil</a></li>
-                <li><a href="index.php"><i class="fa fa-question-circle"></i>Ayuda</a></li>
+                <li><a href="{{ URL::to('/home') }}"><i class="fa fa-user"></i>Perfil</a></li>
+                <li><a href="{{ URL::to('/home') }}"><i class="fa fa-question-circle"></i>Ayuda</a></li>
                 <li><a href="{{ URL::to('/logout') }}"><i class="fa fa-sign-out"></i>Salir</a></li>
             </ul>
         </li>
