@@ -42,7 +42,7 @@ class LoginController extends Controller
     {
         if (Auth::attempt(['username' => $request['username'], 'password' => $request['password']])) {
 
-            return Redirect::to('/');
+            return Redirect::to('/home');
         }
 
         return Redirect::to('/login');
