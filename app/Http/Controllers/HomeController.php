@@ -2,11 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
+use Request;
+use Mail;
 
 use App\Http\Requests;
-use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\View;
+use App\User;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Response;
+use Validator;
+
 
 class HomeController extends Controller
 {
@@ -38,7 +45,14 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo Request::input('username');
+
+        return Response::json([
+            'Success' => [
+                'message'     => 'Record Save Exits',
+                'status_code' => 200
+            ]
+        ], 200);
     }
 
     /**

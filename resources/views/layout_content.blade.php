@@ -17,6 +17,7 @@
     <!--  MAIN CSS -->
     <link href="{!! asset('css/estilos.css') !!}" media="all" rel="stylesheet" type="text/css" />
     <link href="{!! asset('css/font-awesome.css') !!}" media="all" rel="stylesheet" type="text/css" />
+    <link href="{!! asset('css/bootstrap.css') !!}" media="all" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -64,6 +65,9 @@
     @yield('content')
 
     <footer>&copy; 2016 All rights reserved to Ocean DevGroup</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{!! asset('js/bootstrap.js') !!}"></script>
+    <script src="{!! asset('js/ajax-crud.js') !!}"></script>
 </div>
 </body>
 </html>
